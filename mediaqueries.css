@@ -101,7 +101,14 @@
     text-align: justify;
   }
 
-  /* Stack experience and education sections vertically */
+  .about-containers{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
   .about-containers{
     display: flex;
     flex-direction: column;
