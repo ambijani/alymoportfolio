@@ -238,7 +238,6 @@ section {
 .btn-color-2:hover {
   cursor: pointer;
 }
-
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
@@ -318,6 +317,7 @@ section {
 
 #experience {
   position: relative;
+  margin-bottom: 240px;
 }
 
 .experience-sub-title {
@@ -357,6 +357,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-top: 240px;
 }
 
 .color-container {
@@ -366,8 +367,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 280px;
+  height: 280px;
 }
 
 .project-title {
