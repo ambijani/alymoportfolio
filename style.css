@@ -445,6 +445,12 @@ article p {
 .project-title {
   margin: 1rem;
   color: black;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
 }
 
 .project-description {
