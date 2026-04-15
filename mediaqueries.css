@@ -6,9 +6,18 @@
   .about-containers {
     flex-wrap: wrap;
   }
+  #projects .about-containers {
+    grid-template-columns: repeat(3, 1fr);
+  }
   #contact,
   #projects {
     height: fit-content;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #projects .about-containers {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -62,6 +71,9 @@
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
+  }
+  #projects .about-containers {
+    grid-template-columns: 1fr;
   }
   .about-containers,
   .contact-info-upper-container,
