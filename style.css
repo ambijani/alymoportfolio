@@ -466,6 +466,11 @@ article p {
   border-color: rgb(163, 163, 163);
 }
 
+.project-btn.btn-color-1 {
+  color: white;
+  border-color: rgb(53, 53, 53);
+}
+
 /* CONTACT */
 
 #contact {
