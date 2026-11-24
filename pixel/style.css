@@ -379,24 +379,27 @@ section {
 }
 
 .now-card__label {
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--pixel-gold);
   margin-bottom: 0.6rem;
 }
 
 .now-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 0.6rem;
-  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  color: var(--pixel-cyan);
 }
 
 .now-card p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   line-height: 1.55;
   flex: 1;
+  color: #d8f6ff;
 }
 
 .now-card__chart {
@@ -406,18 +409,17 @@ section {
 }
 
 .now-card--wide h3 {
-  font-size: 1.4rem;
+  font-size: 1.15rem;
 }
 
 .now-card__link {
   margin-top: 1rem;
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--ink);
+  font-size: 1.05rem;
+  color: var(--pixel-cyan);
 }
 
 .now-card__link:hover {
-  color: var(--accent);
+  color: #fff;
 }
 
 .now-card__list {
@@ -430,20 +432,20 @@ section {
 .now-card__list li {
   position: relative;
   padding-left: 1.3rem;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   line-height: 1.5;
-  color: rgb(85, 85, 85);
+  color: #d8f6ff;
 }
 
 .now-card__list li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.5em;
+  top: 0.6em;
   width: 6px;
   height: 6px;
-  border-radius: 50%;
-  background: var(--accent);
+  border-radius: 0;
+  background: var(--pixel-magenta);
 }
 
 #about {
