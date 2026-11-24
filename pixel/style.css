@@ -528,9 +528,12 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  color: var(--pixel-gold);
+  text-shadow: 2px 2px 0 var(--pixel-magenta);
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin-bottom: 2rem;
 }
 
@@ -589,20 +592,22 @@ article p {
 }
 
 .skill-chip {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--ink);
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  border: 1.5px solid var(--card-border);
-  background: var(--paper);
-  transition: background 200ms ease, color 200ms ease;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--pixel-cyan);
+  padding: 0.4rem 0.9rem;
+  border-radius: 0;
+  border: 2px solid var(--pixel-cyan);
+  background: var(--pixel-navy-card);
+  box-shadow: 3px 3px 0 var(--pixel-magenta);
+  transition: background 150ms ease, color 150ms ease, transform 150ms ease;
 }
 
 .skill-chip:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: white;
+  background: var(--pixel-magenta);
+  border-color: #fff;
+  color: #fff;
+  transform: translate(-1px, -1px);
 }
 
 /* PROJECTS SECTION */
