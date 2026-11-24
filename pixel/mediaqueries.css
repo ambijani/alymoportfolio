@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    min-height: fit-content;
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -61,10 +61,10 @@
 
 @media screen and (max-width: 600px) {
   #contact {
-    height: 40vh;
+    min-height: fit-content;
   }
   #profile {
-    height: 83vh;
+    min-height: fit-content;
     margin-bottom: 0;
   }
   article {
@@ -89,10 +89,10 @@
     font-size: 1rem;
   }
   .experience-sub-title {
-    font-size: 1.25rem;
+    font-size: 0.85rem;
   }
   .logo {
-    font-size: 1.5rem;
+    font-size: 0.55rem;
   }
   .nav-links {
     flex-direction: column;
@@ -108,7 +108,7 @@
     font-size: 1.25rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   .text-container {
     text-align: justify;

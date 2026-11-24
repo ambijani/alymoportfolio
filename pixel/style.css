@@ -38,6 +38,11 @@ html {
   scroll-behavior: smooth;
 }
 
+:focus-visible {
+  outline: 2px dashed var(--pixel-gold);
+  outline-offset: 2px;
+}
+
 p {
   color: #d8f6ff;
 }
@@ -194,7 +199,6 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 clamp(1.5rem, 7vw, 10rem);
   box-sizing: border-box;
   min-height: fit-content;
@@ -225,7 +229,8 @@ section {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  height: 80vh;
+  min-height: fit-content;
+  padding: 2rem 0;
 }
 
 .section__pic-container {
@@ -693,7 +698,8 @@ article p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  min-height: fit-content;
+  padding: 2rem 0;
 }
 
 .contact-info-upper-container {
