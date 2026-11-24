@@ -6,7 +6,7 @@ function toggleMenu() {
 }
 
 // Sticky nav shadow on scroll
-const navs = document.querySelectorAll("nav");
+const navs = document.querySelectorAll("#desktop-nav, #hamburger-nav");
 window.addEventListener("scroll", () => {
   const scrolled = window.scrollY > 10;
   navs.forEach((nav) => nav.classList.toggle("scrolled", scrolled));

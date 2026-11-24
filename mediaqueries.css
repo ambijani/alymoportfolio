@@ -57,8 +57,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
+  #contact {
     height: 40vh;
   }
   #profile {
@@ -68,9 +67,8 @@
   article {
     font-size: 1rem;
   }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+  footer .nav-links-container {
+    margin-bottom: 1rem;
   }
   #projects .about-containers {
     grid-template-columns: 1fr;
