@@ -655,40 +655,37 @@ article p {
 }
 
 .project-img {
-  border-radius: 1.5rem;
+  border-radius: 0;
   width: 220px;
   height: 220px;
   object-fit: cover;
-  border: 1px solid rgb(230, 230, 230);
+  border: 3px solid var(--pixel-cyan);
 }
 
 .project-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  color: var(--pixel-gold);
+  text-shadow: 2px 2px 0 var(--pixel-magenta);
   margin: 1rem;
-  color: black;
-  font-size: 1.3rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
   width: 100%;
   text-align: center;
 }
 
 .project-description {
-  font-size: 0.9rem;
-  color: rgb(100, 100, 100);
+  font-size: 1.05rem;
+  color: #d8f6ff;
   text-align: center;
   margin: 0 0.5rem 1rem;
   line-height: 1.5;
 }
 
-.project-btn {
-  color: var(--ink);
-  border-color: var(--ink);
-}
-
-.project-btn.btn-color-1 {
-  color: white;
-}
+/* .project-btn's color is fully handled by .btn/.btn-color-1/.btn-color-2 (Task 4) */
 
 /* CONTACT */
 
