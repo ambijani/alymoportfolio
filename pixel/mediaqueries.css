@@ -7,7 +7,7 @@
     flex-wrap: wrap;
   }
   #projects .about-containers {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   #contact,
   #projects {
@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 900px) {
   #projects .about-containers {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .now-grid {
     grid-template-columns: 1fr;

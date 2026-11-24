@@ -300,6 +300,7 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  filter: invert(1);
 }
 
 /* BUTTONS */
@@ -626,7 +627,7 @@ article p {
 
 #projects .about-containers {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
   margin: 0;
 }
@@ -662,7 +663,9 @@ article p {
 .project-img {
   border-radius: 0;
   width: 220px;
-  height: 220px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
   object-fit: cover;
   border: 3px solid var(--pixel-cyan);
 }
