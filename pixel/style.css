@@ -1,14 +1,13 @@
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-
 :root {
-  --accent: #2f6b4f;
-  --accent-dark: #21523b;
-  --ink: #1c1c1a;
-  --paper: #f7f3ec;
-  --card-border: #1c1c1a;
-  --card-shadow: 0 6px 20px rgba(28, 28, 26, 0.08);
+  --pixel-navy: #0f0a2e;
+  --pixel-navy-card: #1a1246;
+  --pixel-magenta: #ff2e88;
+  --pixel-cyan: #7df9ff;
+  --pixel-gold: #ffe14d;
+  --font-display: 'Press Start 2P', monospace;
+  --font-body: 'VT323', monospace;
 }
 
 * {
@@ -17,10 +16,22 @@
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-body);
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  background: var(--paper);
+  background: var(--pixel-navy);
+  color: #fff;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 3px);
+  z-index: 1000;
 }
 
 html {
@@ -28,7 +39,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: #d8f6ff;
 }
 
 /* TRANSITION */
