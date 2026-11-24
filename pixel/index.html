@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alymuhammad Bijani — Software Engineer at Wells Fargo with a background in data science. Explore my projects, skills, and experience.">
+  <title>Bijani Builds</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/bijani_build_logo.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TRR2CFN4Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7TRR2CFN4Z');
+  </script>
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Alymuhammad Bijani</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Alymuhammad Bijani</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container bento-card">
+      <img src="../assets/Bijani_Alymuhammad.png" alt="Alymuhammad Bijani profile picture" />
+    </div>
+    <div class="section__text bento-card">
+      <h1 class="title">Hey, I'm Aly.</h1>
+      <p class="tagline">Give me something tedious or confusing and I'll probably try to build my way out of it.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('../assets/Alymuhammad Bijani FT Resume July 2026.pdf', '_blank')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://linkedin.com/in/ambijani" target="_blank">
+          <img src="../assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+        </a>
+        <a href="https://github.com/ambijani" target="_blank">
+          <img src="../assets/github.png" alt="My Github profile" class="icon" />
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="now">
+    <p class="section__text__p1">Right Now</p>
+    <h1 class="title">A Quick Look</h1>
+    <div class="now-grid">
+      <div class="bento-card now-card now-card--github now-card--wide">
+        <span class="now-card__label">GitHub activity</span>
+        <h3>Shipping most weeks</h3>
+        <img src="https://ghchart.rshah.org/2f6b4f/ambijani" alt="Alymuhammad Bijani's GitHub contribution graph" class="now-card__chart" />
+        <a href="https://github.com/ambijani" target="_blank" class="now-card__link">@ambijani on GitHub →</a>
+      </div>
+      <div class="bento-card now-card now-card--building">
+        <span class="now-card__label">Currently building</span>
+        <h3>Solving real problems, one annoyance at a time</h3>
+        <p>My inbox manages itself now. My credit cards pick themselves. I'm the person who gets mildly obsessed with a problem until it's just... handled.</p>
+        <a href="#projects" class="now-card__link">See the projects →</a>
+      </div>
+      <div class="bento-card now-card now-card--principles">
+        <span class="now-card__label">How I work</span>
+        <h3>A few rules I don't break</h3>
+        <ul class="now-card__list">
+          <li>If I can't explain how it works, I don't ship it.</li>
+          <li>Automate the boring part, keep a human in the loop for anything that matters.</li>
+          <li>Build the thing you'd actually use yourself.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="../assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Software Engineer @ Wells Fargo<br> Data Scientist @ Landsness Lab<br> Data Science Intern @
+              The.Ismaili</p>
+          </div>
+          <div class="details-container">
+            <img src="../assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Washington University in St. Louis<br> B.Sc. Computer Science, Data Science<br> GPA: 3.96</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I'm a Software Engineer at Wells Fargo, but I got here through data science — time spent as a researcher
+            and data scientist taught me to understand a problem before reaching for a solution. That's still how I
+            work: figure out what's actually broken, then build something that fixes it without overcomplicating it.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="../assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container bento-card skill-group">
+          <h2 class="experience-sub-title">Languages & Frameworks</h2>
+          <div class="skill-chips">
+            <span class="skill-chip">Java</span>
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">Spring Boot</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">React</span>
+            <span class="skill-chip">Angular</span>
+            <span class="skill-chip">C++</span>
+            <span class="skill-chip">PHP</span>
+            <span class="skill-chip">R</span>
+            <span class="skill-chip">HTML</span>
+            <span class="skill-chip">CSS</span>
+            <span class="skill-chip">MySQL</span>
+            <span class="skill-chip">H2</span>
+          </div>
+        </div>
+        <div class="details-container bento-card skill-group">
+          <h2 class="experience-sub-title">Tools & Platforms</h2>
+          <div class="skill-chips">
+            <span class="skill-chip">Git</span>
+            <span class="skill-chip">AWS EC2</span>
+            <span class="skill-chip">Linux</span>
+            <span class="skill-chip">VS Code</span>
+            <span class="skill-chip">JetBrains</span>
+            <span class="skill-chip">Eclipse</span>
+            <span class="skill-chip">Postman</span>
+            <span class="skill-chip">Swagger UI</span>
+            <span class="skill-chip">Jupyter</span>
+            <span class="skill-chip">R Studio</span>
+            <span class="skill-chip">Anaconda</span>
+            <span class="skill-chip">Notion</span>
+            <span class="skill-chip">JDoodle</span>
+            <span class="skill-chip">Orchestra</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="../assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container reveal">
+          <div class="article-container">
+            <img src="../assets/butler-icon.svg" alt="Butler" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Butler</h2>
+          <p class="project-description">Scheduled, rules-based (no LLM) email agent that checks your inbox, proposes deletions, groups what matters into a digest, and sends it daily — nothing is deleted until you approve it.</p>
+          <div class="btn-container">
+            <a href="https://github.com/ambijani/butler-public" target="_blank">
+              <button class="btn btn-color-2 project-btn">Github</button>
+            </a>
+          </div>
+        </div>
+        <div class="details-container color-container reveal">
+          <div class="article-container">
+            <img src="../assets/stl-gathering.png" alt="STL Gathering Website" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">STL Gathering</h2>
+          <p class="project-description">Community gathering management platform for the STL Ismaili community — tracks Varo assignments, shoe counts, and member signups across gatherings.</p>
+          <div class="btn-container">
+            <a href="https://stl-gathering-website.vercel.app" target="_blank">
+              <button class="btn btn-color-1 project-btn">Visit Site</button>
+            </a>
+          </div>
+        </div>
+        <div class="details-container color-container reveal">
+          <div class="article-container">
+            <img src="../assets/ledger-optimizer.png" alt="Ledger Optimizer (ccMax)" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Ledger Optimizer (ccMax)</h2>
+          <p class="project-description">AI-powered credit card optimizer built with Next.js, Supabase, and Claude that recommends the best card for every purchase based on your actual rewards, spending caps, and point valuations.</p>
+          <div class="btn-container">
+            <a href="https://github.com/ambijani/ccMax" target="_blank">
+              <button class="btn btn-color-2 project-btn">Github</button>
+            </a>
+            <a href="https://cc-max.vercel.app" target="_blank">
+              <button class="btn btn-color-1 project-btn">Live Site</button>
+            </a>
+          </div>
+        </div>
+        <div class="details-container color-container reveal">
+          <div class="article-container">
+            <img src="../assets/opportunities-agent.png" alt="Opportunities Agent" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Opportunities Agent</h2>
+          <p class="project-description">AI-powered Discord bot that scrapes job and internship postings daily from multiple sources, using Claude to classify and route them to the right channels.</p>
+          <div class="btn-container">
+            <a href="https://github.com/ambijani/opportunities-agent" target="_blank">
+              <button class="btn btn-color-2 project-btn">Github</button>
+            </a>
+          </div>
+        </div>
+        <div class="details-container color-container reveal">
+          <div class="article-container">
+            <img src="../assets/SWAVE_FINAL_LOGO copy.jpg" alt="SWAVE" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">SWAVE</h2>
+          <p class="project-description">Sleep quality analysis platform using EEG data and machine learning to deliver personalized sleep insights and recommendations.</p>
+          <div class="btn-container">
+            <a href="https://github.com/cilantroxiao/SWAVE" target="_blank">
+              <button class="btn btn-color-2 project-btn">Github</button>
+            </a>
+          </div>
+        </div>
+        <div class="details-container color-container reveal">
+          <div class="article-container">
+            <img src="../assets/wustl_workday_logo.png" alt="Clock-in/out Automation" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Workday Automation</h2>
+          <p class="project-description">Python script using Selenium WebDriver to automate WashU Workday clock-in/out, eliminating manual daily check-ins.</p>
+          <div class="btn-container">
+            <a href="https://github.com/ambijani/WUSTLWorkdayAutomationScript" target="_blank">
+              <button class="btn btn-color-2 project-btn">Github</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="../assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="../assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:alybijani@gmail.com" target="_blank">alybijani@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="../assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://linkedin.com/in/ambijani" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Alymuhammad Bijani. All Rights Reserved.</p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
+</html>
