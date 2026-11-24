@@ -204,19 +204,18 @@ section {
   display: flex;
 }
 
-/* BENTO CARD */
+/* PIXEL CARD (formerly BENTO CARD) */
 
 .bento-card {
-  background: #fffdf9;
-  border: 1.5px solid var(--card-border);
-  border-radius: 1.5rem;
-  box-shadow: var(--card-shadow);
-  transition: transform 250ms ease, box-shadow 250ms ease;
+  background: var(--pixel-navy-card);
+  border: 3px solid var(--pixel-cyan);
+  border-radius: 0;
+  box-shadow: 8px 8px 0 var(--pixel-magenta);
+  transition: transform 150ms ease;
 }
 
 .bento-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 28px rgba(28, 28, 26, 0.12);
+  transform: translate(-2px, -2px);
 }
 
 /* PROFILE SECTION */
@@ -254,8 +253,8 @@ section {
 }
 
 .section__text .tagline {
-  font-size: 1.05rem;
-  color: rgb(85, 85, 85);
+  font-size: 1.2rem;
+  color: #9be8ff;
   line-height: 1.6;
   margin: 0.75rem 0 1.5rem;
 }
@@ -274,8 +273,14 @@ section {
 }
 
 .title {
-  font-size: 3rem;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  color: var(--pixel-gold);
+  text-shadow: 4px 4px 0 var(--pixel-magenta);
+  letter-spacing: 1px;
+  font-size: 2rem;
   text-align: center;
+  line-height: 1.6;
 }
 
 #socials-container {
@@ -301,42 +306,45 @@ section {
 }
 
 .btn {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 0.7rem;
   font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
+  transition: all 150ms ease;
+  padding: 1rem 0.75rem;
   width: 8rem;
-  border-radius: 2rem;
+  border-radius: 0;
+  box-shadow: 6px 6px 0 var(--pixel-navy);
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: var(--ink) 0.1rem solid;
+  border: #fff 0.15rem solid;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
+  transform: translate(-2px, -2px);
 }
 
 .btn-color-1 {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: white;
+  background: var(--pixel-magenta);
+  border-color: #fff;
+  color: #fff;
 }
 
 .btn-color-1:hover {
-  background: var(--accent-dark);
-  border-color: var(--accent-dark);
+  background: #d4186a;
 }
 
 .btn-color-2 {
-  background: none;
-  color: var(--ink);
+  background: var(--pixel-cyan);
+  color: var(--pixel-navy);
 }
 
 .btn-color-2:hover {
-  background: var(--ink);
-  color: white;
+  background: #5fd9f0;
 }
 
 .btn-container {
