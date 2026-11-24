@@ -470,6 +470,11 @@ section {
   display: flex;
 }
 
+.text-container p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
 .arrow {
   position: absolute;
   right: -5rem;
@@ -479,17 +484,28 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: #fffdf9;
-  border-radius: 1.5rem;
-  border: 1.5px solid var(--card-border);
-  box-shadow: var(--card-shadow);
+  background: var(--pixel-navy-card);
+  border-radius: 0;
+  border: 3px solid var(--pixel-cyan);
+  box-shadow: 8px 8px 0 var(--pixel-magenta);
   text-align: center;
-  transition: transform 250ms ease, box-shadow 250ms ease;
+  transition: transform 150ms ease;
 }
 
 .details-container:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 28px rgba(28, 28, 26, 0.12);
+  transform: translate(-2px, -2px);
+}
+
+.details-container h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  color: var(--pixel-gold);
+  font-size: 1rem;
+  margin: 0.75rem 0;
+}
+
+.details-container p {
+  color: #d8f6ff;
 }
 
 .section-container {
