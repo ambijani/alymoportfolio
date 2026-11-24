@@ -699,10 +699,10 @@ article p {
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
-  border-radius: 2rem;
-  border: 1.5px solid var(--card-border);
-  background: #fffdf9;
-  box-shadow: var(--card-shadow);
+  border-radius: 0;
+  border: 3px solid var(--pixel-cyan);
+  background: var(--pixel-navy-card);
+  box-shadow: 8px 8px 0 var(--pixel-magenta);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -716,7 +716,15 @@ article p {
 }
 
 .contact-info-container p {
-  font-size: larger;
+  font-size: 1.3rem;
+}
+
+.contact-info-container a {
+  color: var(--pixel-cyan);
+}
+
+.contact-info-container a:hover {
+  color: #fff;
 }
 
 .contact-icon {
@@ -733,7 +741,7 @@ footer {
   height: auto;
   margin: 0 clamp(1.5rem, 7vw, 10rem);
   padding: 2.5rem 0 2rem;
-  border-top: 1px solid rgb(230, 230, 230);
+  border-top: 1px solid var(--pixel-navy-card);
 }
 
 footer nav,
@@ -755,8 +763,8 @@ footer .nav-links-container {
 footer p {
   text-align: center;
   margin-top: 1.5rem;
-  font-size: 0.85rem;
-  color: rgb(150, 150, 150);
+  font-size: 1rem;
+  color: #6b6b9c;
 }
 
 /* SCROLL REVEAL */
