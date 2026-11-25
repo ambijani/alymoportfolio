@@ -78,8 +78,12 @@
   .btn-container {
     flex-wrap: wrap;
   }
+  .contact-info-upper-container {
+    row-gap: 1rem;
+  }
   .contact-info-container {
     margin: 0;
+    width: 100%;
   }
   .contact-info-container p,
   .nav-links li a {

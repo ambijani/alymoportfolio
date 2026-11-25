@@ -394,6 +394,10 @@ section {
   width: 100%;
   height: auto;
   margin: 1rem 0 1rem;
+  background: #eeeeee;
+  border: 3px solid var(--pixel-navy);
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 .now-card--wide h3 {
@@ -661,6 +665,7 @@ section {
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
+  gap: 1.5rem;
   border-radius: 0;
   border: 3px solid var(--pixel-cyan);
   background: var(--pixel-navy-card);
