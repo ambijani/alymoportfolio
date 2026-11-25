@@ -67,9 +67,6 @@
     min-height: fit-content;
     margin-bottom: 0;
   }
-  article {
-    font-size: 1rem;
-  }
   footer .nav-links-container {
     margin-bottom: 1rem;
   }
@@ -103,9 +100,6 @@
     width: auto;
     height: 46vw;
     justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
   }
   .title {
     font-size: 1.3rem;
