@@ -105,6 +105,9 @@
     height: 46vw;
     justify-content: center;
   }
+  .section__pic-container img {
+    object-position: center 20%;
+  }
   .title {
     font-size: 1.3rem;
   }
